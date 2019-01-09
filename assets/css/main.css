@@ -4120,6 +4120,10 @@ input, select, textarea {
     color: #2E9AFE !important;
 }
 
+.blue{
+    color: #2E9AFE !important;
+}
+
 /* Red */
 .redhover:hover,
 .redhover:active{
@@ -4155,13 +4159,10 @@ table.red thead {
     background-color: rgba(154, 46, 46, 0.8);
 }
 
-a.red {
-    color: #FE2E2E !important;
-    text-decoration: none;
-}
-
+a.red,
 a.red:hover,
-a.red:active {
+a.red:active,
+h4.red {
     color: #FE2E2E !important;
 }
 
@@ -4200,13 +4201,10 @@ table.green thead {
     background-color: rgba(143, 185, 111, 0.8);
 }
 
-a.green {
-    color: #8fb96f !important;
-    text-decoration: none;
-}
-
+a.green,
 a.green:hover,
-a.green:active {
+a.green:active,
+h4.green {
     color: #8fb96f !important;
 }
 
@@ -4245,13 +4243,10 @@ table.grey thead {
     background-color: rgba(192, 192, 192, 0.8);
 }
 
-a.grey {
-    color: #C0C0C0 !important;
-    text-decoration: none;
-}
-
+a.grey,
 a.grey:hover,
-a.grey:active {
+a.grey:active,
+h4.grey {
     color: #C0C0C0 !important;
 }
 
