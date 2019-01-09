@@ -11,9 +11,11 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
   </head>
   <body class="is-preload">
-    <div id="page-wrapper"> <!-- Header -->
+    <div id="page-wrapper">
+      <!-- Header -->
       <header id="header" class="green">
-        <h1 id="logo"><a href="index.html" class="simplegreenhover">Back to main page</a></h1>
+        <h1 id="logo"><a href="index.html" class="simplegreenhover">Back to main
+            page</a></h1>
         <nav id="nav">
           <ul>
             <li> <a href="#" class="simplegreenhover"><i class="fa fa-bars" style="margin-right:20px"></i></a>
@@ -35,12 +37,48 @@
         <div class="container">
           <header class="major green">
             <h2>Technical part</h2>
-            <p>CHANGE THIS DESCRIPTION !!!</p>
+            <p>Problems encountered and solutions found</p>
           </header>
           <!-- Content -->
           <section id="content" class="green">
-            <h3>Title</h3>
-            <p>Write here</p>
+            <h3>List of the problems</h3>
+            <table class="green">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                	<th>Context</th>
+                </tr>
+              </thead>
+              <tbody>
+              	<tr>
+                  <td><a href="#place_of_sports" class="green">Analyze of the place of sport in the french society</a></td>
+                  <td>Course of Big data</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="content" class="green">
+            <h3>Description of the problems</h3>
+            <h4 id="place_of_sports">Analyze of the place of sport in the french society</h4>
+            <h5>Context</h5>
+            <p>
+              For the course of big data, by groups of two students, the objective was to choose a subject, find open data sets related to it, analyze the data using an open-source programming language, and conclude with the extracted elements.<br/>
+              I worked with <a href="#" title="Click to open Alex Noize portfolio" class="green" target="_blank">Alex Noize</a> for this course, and we chose to analyze the place of sport in the french society.
+            </p>
+            <h5>Tools and resources</h5>
+            <p>
+              To determine the place of sport in the french society, we tried to see if the investment, the life expectancy, the migratory tendencies were impacted by the number of sportive equipment per inhabitant.<br/>
+              To do so, we analyzed four open data sets, two from the french government (<a href="http://www.data.gouv.fr" class="green" target="_blank">data.gouv.fr</a>) and two from the french national institute of statistic and economic studies (<a href="http://www.insee.fr" class="green" target="_blank">INSEE</a>).<br/>
+              Finally, we analyzed these data sets using the programming language R. You can access the GitHub repository in which we stored all the produced algorithms by clicking the button below:<br/>
+              <a href="https://github.com/MathieuRaynaud/ThePlaceOfSportsInTheSociety" class="button icon fa-github greenhover" target="_blank">Visit the GitHub repository</a>
+            </p>
+            <h5>
+              Solution
+            </h5>
+            <p>
+              You can download the report we made on the subject by clicking the button below:<br/>
+              <a href="documents/The_Place_of_Sports_In_the_Society___R_Project.pdf" class="button icon fa-download greenhover" target="_blank">Download the report</a>
+            </p>
           </section>
         </div>
       </div>
@@ -73,5 +111,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
