@@ -11,7 +11,8 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
   </head>
   <body class="is-preload">
-    <div id="page-wrapper"> <!-- Header -->
+    <div id="page-wrapper">
+      <!-- Header -->
       <header id="header">
         <h1 id="logo"><a href="index.html">Back to main page</a></h1>
         <nav id="nav">
@@ -133,7 +134,13 @@
           <section id="content">
             <h3>Experiences description</h3>
             <div id="mosh">
-              <h4 class="blue">Microcontrollers and Open-Source Hardware (MOSH)</h4>
+              <h4 class="blue">Microcontrollers and Open-Source
+                Hardware (MOSH)</h4>
+              <p>
+                For the course of Microcontrollers and Open-Source Hardware, our objective was to study and design a Printed Circuit Board (PCB). This PCB implements a 2-levels trans-impedance amplifier which gets 110nA in input and gives 1.1V in output.<br/>
+                This PCB was designed to be plugged on an Arduino Uno and to use the <a href="#gassensor">gas sensor we produced later</a>.<br/>
+                We started by designing the trans-impedance circuit with an electrical scheme which is the following one:
+              </p>
               <div id="image"> <img id="myImg" src="images/transimpedance_kicad.png"
 
                   alt="Electrical scheme of the PCB" style="width:30%" onclick="openModal(this)">
@@ -146,6 +153,19 @@
                   <div id="caption"></div>
                 </div>
               </div>
+              <ul>
+                In the scheme above:
+                <li>R5, at the entry, protects the operational amplifier against electrostatic discharges</li>
+                <li>R5 and C1 constitute a filter against voltage noise</li>
+                <li>C1 and R1 form a filter against current noise</li>
+                <li>R2 can be changed to adapt the calibre of the amplifier</li>
+                <li>C4 and R3 constitute an active filter</li>
+                <li>C2 and R6 filter the output</li>
+                <li>C3 filters the supply noise</li>
+              </ul>
+              <p>
+                Then, we reported the scheme on the KiCad software, and we designed the routes between all the electrical components to obtain the following 2D view of the PCB:
+              </p>
               <div id="image"> <img id="myImg" src="images/PCB.png" alt="2D wiew of the PCB"
 
                   style="width:30%" onclick="openModal(this)">
@@ -158,6 +178,9 @@
                   <div id="caption"></div>
                 </div>
               </div>
+              <p>
+                Finally, we associated each electrical component to its 3D view, and we generated the 3D views of our PCB:
+              </p>
               <div id="image"> <img id="myImg" src="images/PCB_3D_RECTO.png" alt="3D recto wiew of the PCB"
 
                   style="width:30%" onclick="openModal(this)">
@@ -224,8 +247,8 @@
               <h4 class="blue">Innovative project</h4>
             </div>
             <div id="merckathon">
-              <h4 class="blue">Merckathon of the Oceanological Research Center of
-                Banyuls-sur-Mer</h4>
+              <h4 class="blue">Merckathon of the Oceanological Research Center
+                of Banyuls-sur-Mer</h4>
               <p> The Merckathon of Banyuls-sur-Mer is a Hackathon organized
                 since 2017 by the oceanological research center of Banyuls and
                 the INSA of Toulouse.<br>
